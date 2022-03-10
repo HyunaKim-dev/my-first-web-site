@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Development Diary</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1><a href="index.html">Development Diary</a></h1>
+  <div id="grid">
+    <ol class="one">
+      <li><a href="1.html">STUDY</a></li>
+      <li><a href="2.html">ERROR</a></li>
+    </ol>
+    <div id="article">
+      <h4>2022.3.7.~ </h4>
+      <p>
+        <오늘 배운 학습법&내용>
+      </p>
+      <ol>
+        <li>태그의 부피감을 알아야 한다.</li>
+        <li>박스모델 설정하면 태그의 공간 범위를 알 수 있다. h1태그는 제목인 만큼 텍스트 라인의 모든 공간을 사용.=block level element (vs inline element)</li>
+        <li>h1태그 텍스트를 inline element 즉 자신의 텍스트 부피만큼 <a href="box.html" target="_blank"><u>박스처리</u></a>하고 싶다면 display:inline; 반대는 display:block;<br>
+          display:none;은 보이지 않게 해줌</li>
+        <li>css의 주석은 /* ~~ */</li>
+        <li>선택자 콤마로 여러 태그에 동시 적용 가능.<br>
+          border-width:5px;/border-color:red;/border-style:solid; = boder: 5px solid red; </li>
+        <li>검사를 통해 태그가 어떤 것의 영향을 받고 있는지 알 수 있다. </li>
+        <li>*div태그: 무색무취의 태그,디자인의 목적을 위해 어떤 기능도, 의미도 없는 태그를 사용해야 하는 경우에 쓰임(block level element)<br>
+          예)h1과 같은 형상으로 표현하고 싶지만 제목의 속성을 갖지 않는 경우</li>
+        <li>*span태그: 목적은 div와 같으나 inline element이다. 용도에 맞게 사용. <a href="grid.html" target="_blank"><u>예시</u></a></li>
+        <li>위 예시의 그리드는 최신 기술로, 최신 기술 사용 시에는 통계에 기반해 사용 여부 확인을 하는 게 좋다. <a href="http://caniuse.com" target="_blank"><u>통계사이트</u></a><br>
+          에서 grid 검색하면 웹브라우저별 지원 현황이 나온다.</li>
+        <li>Responsible Web/Design: 여러 형태에 맞게 동작하는 반응형 웹/디자인. </li>
+        <li>미디어쿼리: CSS를 통해 반응형 웹을 구현하는 핵심 개념.<br>
+          *화면 크기에 따라 반응 - <a href="mediaquery.html"><u>mediaquery.html</u></a> </li>
+        <li>캐싱: 저장한다는 의미. 네트워크의 측면에서, 이론적으로는 css파일을 불러들여 효과를 적용하는 것보다
+          html에 내용을 저장하는 것이 효율적이지만, 파일 수정 전까지는 해당 파일을 컴퓨터에 저장해 두고 빠르게
+          불러들일 수 있는 캐싱 기능 덕분에 파일을 캐싱함으로써 속도 문제, 사업자의 비용 절약(트래픽,사용료) 가능. </li>
+          <br>
+          <li>**Javascript: html 제어를 통해 웹페이지를 동적으로 만들어주는 언어.</li>
+
+      </ol>
+    </div>
+  </div>
+
+  <h4 style="margin-top:60px;">후기</h4>
+  <p style="margin-top:20px;">
+
+  </p>
+  <div id="line">
+
+    <hr>
+    Study with <a href="https://opentutorials.org/course/1"><u>생활코딩</u></a> <br>
+    Copyright in hyuna Kim
+    <p>
+  </div>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function() {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/62144bce1ffac05b1d7b06b0/1fsfkg839';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+  </p>
+</body>
+
+</html>

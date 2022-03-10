@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <style>
+    #grid {
+      border: 3px solid pink;
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      /*
+  display:grid 를 쓰면 아무런 반응 없음. 추가로 그리드 템플릿을 쓰면 적용되는데,
+  fr은 2번째(diary)가 남은 공간을 쓴다는 의미. 화면을 늘였다 줄였다 하면 150px을 값으로 갖는
+  development는 그 값만큼 공간을 사용하는 반면, diary는 화면의 변화에 맞춰 늘었다 줄어든다.
+  만약 2fr 1fr 이라고 지정했다면 그 비율만큼 각각 공간을 나눠쓰게 된다.
+  두 번째 공간에 많은 글이 들어가면 그에 따라 상하로도 크기 조정이 된다. */
+
+    }
+
+    div {
+      border: 3px solid gray;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="grid">
+    <div>Development</div>
+    <div>Diary</div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Development Diary</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1><a href="index.html">Development Diary</a></h1>
+  <div id="grid">
+    <ol class="one">
+      <li><a href="1.html">STUDY</a></li>
+      <li><a href="2.html">ERROR</a></li>
+    </ol>
+    <div>
+      <h4>2022.2.21.~22.</h4>
+      <br>
+      <오늘 배운 학습법&내용>
+        <ol>
+          <li>인터넷은 최소 2개의 컴퓨터 있어야 성립. 하나는 요청하는 클라이언트 컴퓨터, 다른 하나는 서버 컴퓨터.<br>
+            웹이라는 무형의 정보 네트워크가 작동하기 위해서도 마찬가지로 웹 클라이언트(=클라이언트) 컴퓨터와 웹 서버 컴퓨터가 필요하다.<br>
+            게임의 경우라면 게임 클라이언트, 게임 서버라고 할 수 있을 것.<br>
+            클라이언트에는 웹브라우저, 서버에는 웹 서버라는 프로그램이 설치된다. 또 서버에는 주소가 부여되는데, 클라이언트는 이 주소로 요청을 보낸다.<br>
+            웹브라우저를 통해 요청된 index.html 문서 혹은 정보는 서버 컴퓨터에 저장되어 있고, 웹서버를 통해 클라이언트에게 보내주면, 웹브라우저를 통해 그것을 볼 수 있다.<br></li>
+          <li>웹서버 이용의 2가지 방법: 호스팅=클라우드(맡김), 웹서버(직접)</li>
+          <li>호스팅 중, 웹 서버 운영을 위한 SW까지 설치해 빌려주는 것이 '웹호스팅'이다.(ex:github)</li>
+          <li>웹 서버로 직접 하는 방법: 가장 간단한 프로그램인 <strong>Web Server for Chrome</strong>을 설치해 이용.</li><br>
+          <ul>
+            <li>file:///Users/kimhyuna/Desktop/web/index.html: 웹 브라우저가 웹페이지를 직접 여는 형태로, 웹브라우저에서 comman+O</li>
+            <li>http://127.0.0.1:8887/index.html : 같은 컴퓨터에 설치되어 있는 웹서버에 접속해서, 웹서버가 index.html이라는 컴퓨터의 파일을 읽어서 웹브라우저에게 돌려줬다는 뜻</li><br>
+            *http: hypertext transfer protocol: 웹페이지를 전송하기 위한 통신규약.<br>
+            *IPA: internet protocol address: 컴퓨터가 서로 통신할 때 사용하는 주소체계로 43억 개 정도 존재.(예: 127.0.0.1) 이 숫자는 자신, 자신의 컴퓨터를 가리킨다.
+          </ul><br>
+          <li>하지만, 여기까지의 웹서버는, 일반적으로 다른 곳의 서버에서 정보를 제공받는 형태와는 다르다. 컴퓨터가 2대인 형태 말이다.<br>
+            나머지 하나의 컴퓨터로서 스마트폰을 이용해볼 수 있다.
+            <ul><br>
+              <li>휴대폰과 컴퓨터를 같은 네트워크(와이파이)에 연결한다</li>
+              <li>설정을 바꾸기 위해 웹서버의 작동을 멈추고(웹서버크롬), 아래의 Accessible on local network를 켠다.<br>
+                이는 같은 네트워크에 있는 컴퓨터들끼리 통신할 수 있도록 도와주는 옵션이다. 그리고 웹서버를 다시 켜면 옵션이 반영된다.<br>
+                아래 새롭게 등장한 IPA는 다른 컴퓨터가 이 컴퓨터로 접속할 수 있는 주소이다. 휴대폰에서 저 주소로 접속한다</li><br>
+              <p>*참고: IPA 뒤의 8887는 포트(port)번호.</p>
+              <li>사파리에서 html문서가 접속되는 것을 확인할 수 있다. 이것은 스마트폰이라는 클라이언트 컴퓨터에서 사파리 브라우저를 통해 요청해,<br>
+                서버 컴퓨터(내 컴퓨터)에서 보내준 html 문서를 읽어들인 개념이다. 앞으로 대부분의 작업은 호스팅을 통해 이뤄질 것이지만,<br>
+                이것은 중요한 웹 서버 작동 원리를 아는 일이다.</li>
+            </ul>
+          <li>체크박스 <input type="checkbox">와 아래의 응원.
+            <p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/JUNFoER12kk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </p>
+            *youtube 퍼가기 기능에 있는 소스/코드. iframe은 inline frame의 약자다.
+
+          <li style="margin-top:30px;">댓글 기능 추천 서비스: DISQUS / LiveRe </li>
+        </ol>
+    </div>
+  </div>
+  <h4 style="margin-top:60px;">후기</h4>
+  <p style="margin-top:40px;"> 재밌어!! 신기해!!<br>
+    "개념을 안다는 것은 체크박스가 늘어나는 일이다. <br>
+    절망이 충분히 성숙해야 극복했을 때 행복감이 커진다 - egoing"</p><br>
+  가진 기술로 구현의 한계를 느껴 절망감이 성숙했을 때가 진도를 나갈 적절한 때라는 뜻.
+  <div id="line">
+
+    <hr>
+    Study with <a href="https://opentutorials.org/course/1"><u>생활코딩</u></a> <br>
+    Copyright in hyuna Kim
+    <p>
+  </div>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function() {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/62144bce1ffac05b1d7b06b0/1fsfkg839';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+  </p>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+  <title>Development Diary</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1><a href="index.html">Development Diary</a></h1>
+  <div id="grid">
+    <ol class="one">
+      <li><a href="1.html">STUDY</a></li>
+      <li><a href="2.html">ERROR</a></li>
+    </ol>
+    <div>
+      <h4>2022.2.20.</h4>
+      <br><오늘 배운 학습법&내용>
+      <ol>
+        <li>만들고 싶은 디자인->페이지소스 검색->태그/코드 복사->검색->적용</li>
+        <br><li>통계 우선순위에 따른 학습(기억해야 할 태그/코드들)</li>
+        <br><li>참고 사이트: advancedwebranking.com</li>
+        <br><li>br 태그는 줄바꿈이라는 시각적 의미만 가지고 있으므로 안 닫아도 됨.</li>
+        <br><li>제목을 표시할 때는, 정보상 strong과 사이즈 조정 등의 디자인적 요소만으로 표현하기보다는
+          h태그를 쓰는 것이 좋다.
+          <br>이렇게 서로 다른 방식으로 코딩된 정보는, 우리가 검색엔진에서 해당 제목으로 검색했을 때 큰 결과 차이를 불러오기 때문이다.
+          <br>검색 엔진은 전 세계의 모든 웹페이지를 읽어들여 웹페이지의 html코드를 분석 후 태그를 근거로 정리정돈하는데,  이때 h와 같이 제목이 태그된 정보가 우선 검색된다.
+          <br>예쁘게 정리하고 싶어 그림으로 내용을 정리한다면, 마찬가지로 html의 세계에서는 없는 정보가 된다. <br>
+          정보를 청각요소로 읽어들이게 하는 기술이 있음에도, 읽어들일 정보가 없다면 시각장애인들에게 없는 정보가 되는 것이다.<br>
+          결과적으로 비즈니스적 측면뿐 아니라 휴머니즘적 측면에서도 적절한 태그를 쓰는 일은 중요한 문제인 것.</li>
+          <br><li>이미지 태그: img이다. 그런데 태그만으로 원하는 이미지를 불러올 수는 없다. a태그도 마찬가지.
+            <br>이것은 태그의 이름만으로는 정보가 부족할 때가 있다는 것이다.
+            이 태그 문법을 만든 컴퓨터 공학자들은 새로운 문법으로 '속성'을 출현시킨다.  </li>
+
+            <br><img src="coding.jpg" width="50%">
+            <br> * width는 percent/pixel로 지정 가능. percent일 때는 창 크기에 따라 조정됨.
+            <br><br><li><a href="https://unsplash.com/" target="_blank" title="free image download">unsplash.com</a>에 무료 이미지 사용 가능</li>
+            <br><li>부모태그와 자식태그
+              <p>ol과 ul의 차이는 ordered/unordered로, ul은 리스트가 점으로 구분되는 반면 ol은 순서가 부여돼 숫자를 대상 앞에 붙여줄 필요가 없다.<br>
+                또한 대량의 항목이 있는 경우 개별적으로 순번을 부여했을 때 가운데 추가를 하기 어렵다. ol은 이 문제를 해결한다.</p>
+                <p>아래는 또 다른 부모 자식 간의 태그인 table, table row, table data 3대이다.</p>
+                <p><table>
+                  <tr>
+                    <td>feel</td>
+                    <td>70</td>
+                  </tr>
+                  <tr>
+                    <td>grade</td>
+                    <td>80</td>
+                  </tr>
+                  <tr>
+                    <td>comment</td>
+                    <td>-</td>
+                  </tr>
+                </table></p>
+                <li><p>title 태그로 웹페이지의 제목을 지정해주면, 검색엔진에 책으로 따지면 책표지와 같은 정보로 사용하므로 사용하지 않으면 손해다.</p></li>
+                <li><p>utf-8: 컴퓨터는 모든 정보를 0,1로 최종 저장하는데, 그 숫자를 어떻게 저장할지에 대한 여러 약속들이 존재하는데 그중 하나.</p>
+                  (가변 길이 유니코드 인코딩. Unicode Transformation Format - 8bit)<br>
+                  지금 이 파일도 utf-8로 저장됨. 따라서 열 때도 utf-8로 열어야 한글이 깨지거나 하는 문제가 없음.<br>
+                  웹브라우저를 utf-8로 열라고 명령하는 것이 meta charset="utf-8"이다.</li>
+                  <li><p>최상단의 타이틀, 메타 태그는 그 하단의 본문을 설명하는 것이다. 본문의 제목 등. charset은 character set.</p></li>
+                  <li><p>관용적 문구"doctype~~" + html, head, body(본문)은 약속. 전세계 모든 웹페이지들의 구조. </li>
+                    <li><p>태그의 제왕이자 hypertext를 의미하는 "a"는 anchor=닻을 의미한다. 정보의 바다에 정박할 수 있게 하는 기능 즉, <strong>링크</strong>이다.<br>
+                      *hypertext:사용자에게 내용의 비순차적 검색이 가능하도록 제공되는 텍스트.<br>
+                      문서 내의 특정한 단어가 다른 단어나 데이터베이스와 링크되어 있어 사용자가 관련 문서를 넘나들며 원하는 정보를 얻을 수 있음.<br>
+                      전자 사전·멀티미디어 데이터베이스·문장 작성 시스템 등에 응용됨.<br></p>
+                      *href: hypertext reference <br>
+                      *<a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target="_blank"title="html specification, W3C">html specitication</a><p>
+                        <p>* 새로운 링크로 열기: target=_"blank"<br>
+                          * 링크 위 마우스 올렸을 때 툴팁: title="원하는 내용"</p></li>
+                        </ol>
+                      </div>
+                    </div>
+
+
+
+
+
+                    <h4 style="margin-top:60px;">후기</h4>
+                    <p style="margin-top:40px;"> 가장 쉬운 것이 가장 중요한 것, 모든 태그를 외울 필요는 없다,
+                      그리고 <a href="http://info.cern.ch/" target="_blank">원시웹.</a></p>
+                      <div id="line">
+
+                        <hr>
+                        Study with <a href="https://opentutorials.org/course/1"><u>생활코딩</u></a> <br>
+                        Copyright in hyuna Kim
+                        <p>
+                        </div>
+                        <!--Start of Tawk.to Script-->
+                        <script type="text/javascript">
+                        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+                        (function(){
+                          var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+                          s1.async=true;
+                          s1.src='https://embed.tawk.to/62144bce1ffac05b1d7b06b0/1fsfkg839';
+                          s1.charset='UTF-8';
+                          s1.setAttribute('crossorigin','*');
+                          s0.parentNode.insertBefore(s1,s0);
+                        })();
+                        </script>
+                        <!--End of Tawk.to Script--></p>
+                      </body>
+                      </html>
